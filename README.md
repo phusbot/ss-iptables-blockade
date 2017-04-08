@@ -46,21 +46,35 @@ pre-up iptables-restore < /etc/iptables
 常见问题
 
 1.Q 为什么国内常见域名会包含华为、vivo、oppo、触宝等这些域名？
+
   A 因为国产手机内置了删不掉的厂商官方应用和第三方应用。
   
 2.Q 有些不常见的域名是哪里得来的？
+
   A 都是通过抓包得出来的地址。
   
 3.Q 我自己如何增加删减规则？
+
   A 增加
+  
     iptables -I OUTPUT -m string --string "增加屏蔽的网址" --algo bm -j DROP
+    
     iptables -I OUTPUT -m string --string "增加放行的网址" --algo bm -j ACCEPT
+    
     删除
+    
     iptables -D OUTPUT -m string --string "删除屏蔽的网址" --algo bm -j DROP
+    
     iptables -D OUTPUT -m string --string "删除放行的网址" --algo bm -j ACCEPT
+    
     就这么简单
+    
     -I 是插入iptables规则；
+    
     -D 是删除对应的iptables规则；
+    
     -j DROP 是丢弃数据包；
+    
     -j ACCEPT 是接受数据包。
+    
     如果你有规则，希望你乐意分享。
