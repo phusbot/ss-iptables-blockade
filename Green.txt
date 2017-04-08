@@ -1,2 +1,0 @@
-iptables -I OUTPUT -m string --string "freewechat.com" --algo bm -j ACCEPT
-iptables -I OUTPUT -m string --string "freeweibo.com" --algo bm -j ACCEPT
