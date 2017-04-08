@@ -56,7 +56,7 @@ pre-up iptables-restore < /etc/iptables
 - Q 我自己如何增加删减规则？
 
   A 增加
-  
+    
     iptables -I OUTPUT -m string --string "增加屏蔽的网址" --algo bm -j DROP
     
     iptables -I OUTPUT -m string --string "增加放行的网址" --algo bm -j ACCEPT
