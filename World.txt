@@ -1,0 +1,10 @@
+#屏蔽 Google Analytics
+iptables -I OUTPUT -m string --string "google-analytics.com" --algo bm -j DROP
+
+#屏蔽 Google 广告
+iptables -I OUTPUT -m string --string "googleadservices.com" --algo bm -j DROP
+iptables -I OUTPUT -m string --string "doubleclick.net" --algo bm -j DROP
+iptables -I OUTPUT -m string --string "googlesyndication.com" --algo bm -j DROP
+
+#屏蔽 GoStats 网站统计
+iptables -I OUTPUT -m string --string "gostats" --algo bm -j DROP
