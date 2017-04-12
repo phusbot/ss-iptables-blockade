@@ -43,11 +43,12 @@ iptables -I OUTPUT -m string --string "cnzz.cn" --algo bm -j DROP
 iptables -I OUTPUT -m string --string "umeng.com" --algo bm -j DROP
 iptables -I OUTPUT -m string --string "51yes.com" --algo bm -j DROP
 
-#屏蔽 微博
+#屏蔽 新浪&微博
 iptables -I OUTPUT -m string --string "weibo.com" --algo bm -j DROP
 iptables -I OUTPUT -m string --string "weibo.cn" --algo bm -j DROP
-
-#屏蔽 新浪
+iptables -I OUTPUT -m string --string "weico.com" --algo bm -j DROP
+iptables -I OUTPUT -m string --string "weico.cc" --algo bm -j DROP
+iptables -I OUTPUT -m string --string "sinaimg.cn" --algo bm -j DROP
 iptables -I OUTPUT -m string --string "sinanode.com" --algo bm -j DROP
 iptables -I OUTPUT -m string --string "sina.com.cn" --algo bm -j DROP
 iptables -I OUTPUT -m string --string "sina.cn" --algo bm -j DROP
@@ -72,7 +73,6 @@ iptables -I OUTPUT -m string --string "cctv.com" --algo bm -j DROP
 iptables -I OUTPUT -m string --string "cntv.cn" --algo bm -j DROP
 iptables -I OUTPUT -m string --string "huanqiu.com" --algo bm -j DROP
 iptables -I OUTPUT -m string --string "xinhuanet.com" --algo bm -j DROP
-
 
 #屏蔽 阿里巴巴
 iptables -I OUTPUT -m string --string "taobao.com" --algo bm -j DROP
