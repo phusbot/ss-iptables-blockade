@@ -1,0 +1,2 @@
+iptables -I OUTPUT -m string --string "freefq.com" --algo bm -j DROP
+iptables -I OUTPUT -m string --string "gfw.press" --algo bm -j DROP
