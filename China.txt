@@ -38,7 +38,6 @@ iptables -I OUTPUT -m string --string "mediav.com" --algo bm -j DROP
 
 #屏蔽 站长统计
 iptables -I OUTPUT -m string --string "51.la" --algo bm -j DROP
-iptables -I OUTPUT -m string --string "gostats" --algo bm -j DROP
 iptables -I OUTPUT -m string --string "cnzz.cn" --algo bm -j DROP
 iptables -I OUTPUT -m string --string "umeng.com" --algo bm -j DROP
 iptables -I OUTPUT -m string --string "51yes.com" --algo bm -j DROP
