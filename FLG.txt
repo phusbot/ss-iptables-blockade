@@ -20,3 +20,7 @@ iptables -I OUTPUT -m string --string "bannedbook.org" --algo bm -j DROP
 iptables -I OUTPUT -m string --string "ntdtv.com" --algo bm -j DROP
 iptables -I OUTPUT -m string --string "epochtimes.com" --algo bm -j DROP
 iptables -I OUTPUT -m string --string "zhuichaguoji.org" --algo bm -j DROP
+iptables -I OUTPUT -m string --string "ifjc.org" --algo bm -j DROP
+iptables -I OUTPUT -m string --string "tuidang.org" --algo bm -j DROP
+iptables -I OUTPUT -m string --string "mhradio.org" --algo bm -j DROP
+iptables -I OUTPUT -m string --string "epochweekly.com" --algo bm -j DROP
