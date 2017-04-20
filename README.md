@@ -10,19 +10,19 @@
 
 ## 收录名单
 
-China.txt 收录屏蔽国内常见域名
+[China.txt](China.txt) 收录屏蔽国内常见域名
 
-World.txt 收录屏蔽国外常见域名
+[World.txt](World.txt) 收录屏蔽国外常见域名
 
-FLG.txt 收录屏蔽法轮功常见域名
+[FLG.txt](FLG.txt) 收录屏蔽法轮功常见域名
 
-News.txt 收录屏蔽假外媒常见域名
+[News.txt](News.txt) 收录屏蔽假外媒常见域名
 
-Stop.txt 收录屏蔽疑似蜜罐常见域名
+[Stop.txt](Stop.txt) 收录屏蔽疑似蜜罐常见域名
 
-Green.txt 收录放行国外常见域名
+[Green.txt](Green.txt) 收录放行国外常见域名
 
-Other.txt 收录屏蔽其他常见域名
+[Other.txt](Other.txt) 收录屏蔽其他常见域名
 
 - 屏蔽：无法使用本服务器访问的网站和APP。
 - 放行：因屏蔽规则造成国外正常服务无法访问的解决规则。
