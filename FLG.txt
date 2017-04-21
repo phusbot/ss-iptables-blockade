@@ -1,4 +1,6 @@
 iptables -I OUTPUT -m string --string "boxun.com" --algo bm -j DROP
+iptables -I OUTPUT -m string --string "boxunblog.com" --algo bm -j DROP
+iptables -I OUTPUT -m string --string "peacehall.com" --algo bm -j DROP
 iptables -I OUTPUT -m string --string "renminbao.com" --algo bm -j DROP
 iptables -I OUTPUT -m string --string "shenyun.com" --algo bm -j DROP
 iptables -I OUTPUT -m string --string "bannednews.org" --algo bm -j DROP
