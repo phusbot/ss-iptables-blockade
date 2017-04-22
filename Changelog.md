@@ -1,3 +1,9 @@
+## 2017年4月22日
+
+- `新增` FLG.txt新增博讯论坛规则
+
+iptables -I OUTPUT -m string --string "boxunclub.com" --algo bm -j DROP
+
 ## 2017年4月21日
 
 - `新增` FLG.txt新增博讯新闻规则
