@@ -13,7 +13,6 @@ iptables -I OUTPUT -m string --string "skycn.net" --algo bm -j DROP
 iptables -I OUTPUT -m string --string "skycn.com" --algo bm -j DROP
 iptables -I OUTPUT -m string --string "shifen.com" --algo bm -j DROP
 iptables -I OUTPUT -m string --string "dwz.cn" --algo bm -j DROP
-
 iptables -I OUTPUT -m string --string "qianqian.com" --algo bm -j DROP
 
 #屏蔽 高德
@@ -181,6 +180,8 @@ iptables -I OUTPUT -m string --string "meitustat.com" --algo bm -j DROP
 
 #屏蔽 美拍
 iptables -I OUTPUT -m string --string "meipai.com" --algo bm -j DROP
+
+#屏蔽 秒拍
 iptables -I OUTPUT -m string --string "miaopai.com" --algo bm -j DROP
 
 #屏蔽 2345
