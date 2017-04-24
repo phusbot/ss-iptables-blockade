@@ -1,6 +1,6 @@
 ## 2017年4月24日
 
-- `新增` China.txt新增百度规则
+- `新增` China.txt新增百度、千千静听、糯米规则
 
 iptables -I OUTPUT -m string --string "tieba.com" --algo bm -j DROP
 
@@ -13,6 +13,40 @@ iptables -I OUTPUT -m string --string "dwz.cn" --algo bm -j DROP
 iptables -I OUTPUT -m string --string "skycn.com" --algo bm -j DROP
 
 iptables -I OUTPUT -m string --string "qianqian.com" --algo bm -j DROP
+
+iptables -I OUTPUT -m string --string "baidustatic.com" --algo bm -j DROP
+
+iptables -I OUTPUT -m string --string "baidupcs.com" --algo bm -j DROP
+
+iptables -I OUTPUT -m string --string "hao123.net" --algo bm -j DROP
+
+iptables -I OUTPUT -m string --string "nuomi.com" --algo bm -j DROP
+
+- `新增` 腾讯规则
+
+iptables -I OUTPUT -m string --string "wegame.com" --algo bm -j DROP
+
+iptables -I OUTPUT -m string --string "qcloud.com" --algo bm -j DROP
+
+iptables -I OUTPUT -m string --string "qplus.com" --algo bm -j DROP
+
+- `新增` 阿里巴巴
+
+iptables -I OUTPUT -m string --string "aliyun.com" --algo bm -j DROP
+
+iptables -I OUTPUT -m string --string "alitrip.com" --algo bm -j DROP
+
+iptables -I OUTPUT -m string --string "fliggy.com" --algo bm -j DROP
+
+iptables -I OUTPUT -m string --string "alibaba.com" --algo bm -j DROP
+
+iptables -I OUTPUT -m string --string "1688.com" --algo bm -j DROP
+
+iptables -I OUTPUT -m string --string "yunos.com" --algo bm -j DROP
+
+- `新增` 携程规则
+
+- `新增` 映客规则
 
 ## 2017年4月22日
 
