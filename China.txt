@@ -7,13 +7,21 @@ iptables -I OUTPUT -m string --string "duapps.com" --algo bm -j DROP
 iptables -I OUTPUT -m string --string "pcfaster.com" --algo bm -j DROP
 iptables -I OUTPUT -m string --string "bdstatic.com" --algo bm -j DROP
 iptables -I OUTPUT -m string --string "bdstatic.cn" --algo bm -j DROP
+iptables -I OUTPUT -m string --string "baidustatic.com" --algo bm -j DROP
+iptables -I OUTPUT -m string --string "baidupcs.com" --algo bm -j DROP
 iptables -I OUTPUT -m string --string "baidu-img.cn" --algo bm -j DROP
 iptables -I OUTPUT -m string --string "hao123.com" --algo bm -j DROP
+iptables -I OUTPUT -m string --string "hao123.net" --algo bm -j DROP
 iptables -I OUTPUT -m string --string "skycn.net" --algo bm -j DROP
 iptables -I OUTPUT -m string --string "skycn.com" --algo bm -j DROP
 iptables -I OUTPUT -m string --string "shifen.com" --algo bm -j DROP
 iptables -I OUTPUT -m string --string "dwz.cn" --algo bm -j DROP
+
+#屏蔽 百度 千千静听
 iptables -I OUTPUT -m string --string "qianqian.com" --algo bm -j DROP
+
+#屏蔽 百度 糯米
+iptables -I OUTPUT -m string --string "nuomi.com" --algo bm -j DROP
 
 #屏蔽 高德
 iptables -I OUTPUT -m string --string "amap.com" --algo bm -j DROP
@@ -25,6 +33,9 @@ iptables -I OUTPUT -m string --string "qq.com" --algo bm -j DROP
 iptables -I OUTPUT -m string --string "wechat.com" --algo bm -j DROP
 iptables -I OUTPUT -m string --string "tenpay.com" --algo bm -j DROP
 iptables -I OUTPUT -m string --string "myapp.com" --algo bm -j DROP
+iptables -I OUTPUT -m string --string "wegame.com" --algo bm -j DROP
+iptables -I OUTPUT -m string --string "qcloud.com" --algo bm -j DROP
+iptables -I OUTPUT -m string --string "qplus.com" --algo bm -j DROP
 
 #屏蔽 IP查询
 iptables -I OUTPUT -m string --string "ipip.net" --algo bm -j DROP
@@ -86,11 +97,17 @@ iptables -I OUTPUT -m string --string "alipay.com" --algo bm -j DROP
 iptables -I OUTPUT -m string --string "alipaylog.com" --algo bm -j DROP
 iptables -I OUTPUT -m string --string "alicdn.com" --algo bm -j DROP
 iptables -I OUTPUT -m string --string "alimama.com" --algo bm -j DROP
+iptables -I OUTPUT -m string --string "alibaba.com" --algo bm -j DROP
 iptables -I OUTPUT -m string --string "tanx.com" --algo bm -j DROP
 iptables -I OUTPUT -m string --string "mmstat.com" --algo bm -j DROP
 iptables -I OUTPUT -m string --string "taobaocdn.com" --algo bm -j DROP
 iptables -I OUTPUT -m string --string "uc.cn" --algo bm -j DROP
 iptables -I OUTPUT -m string --string "ucweb.com" --algo bm -j DROP
+iptables -I OUTPUT -m string --string "aliyun.com" --algo bm -j DROP
+iptables -I OUTPUT -m string --string "alitrip.com" --algo bm -j DROP
+iptables -I OUTPUT -m string --string "fliggy.com" --algo bm -j DROP
+iptables -I OUTPUT -m string --string "1688.com" --algo bm -j DROP
+iptables -I OUTPUT -m string --string "yunos.com" --algo bm -j DROP
 
 #屏蔽 京东
 iptables -I OUTPUT -m string --string "jd.com" --algo bm -j DROP
@@ -199,3 +216,14 @@ iptables -I OUTPUT -m string --string "dpfile.com" --algo bm -j DROP
 iptables -I OUTPUT -m string --string "yximgs.com" --algo bm -j DROP
 iptables -I OUTPUT -m string --string "ksapisrv.com" --algo bm -j DROP
 iptables -I OUTPUT -m string --string "gifshow.com" --algo bm -j DROP
+
+#屏蔽 映客
+iptables -I OUTPUT -m string --string "inke.cn" --algo bm -j DROP
+iptables -I OUTPUT -m string --string "inke.com" --algo bm -j DROP
+iptables -I OUTPUT -m string --string "inke.tv" --algo bm -j DROP
+iptables -I OUTPUT -m string --string "meelive.cn" --algo bm -j DROP
+iptables -I OUTPUT -m string --string "meelive.tv" --algo bm -j DROP
+
+#屏蔽 携程
+iptables -I OUTPUT -m string --string "ctrip.com" --algo bm -j DROP
+iptables -I OUTPUT -m string --string "c-ctrip.com" --algo bm -j DROP
