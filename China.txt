@@ -6,14 +6,14 @@ iptables -I OUTPUT -m string --string "duapp.com" --algo bm -j DROP
 iptables -I OUTPUT -m string --string "duapps.com" --algo bm -j DROP
 iptables -I OUTPUT -m string --string "pcfaster.com" --algo bm -j DROP
 iptables -I OUTPUT -m string --string "bdstatic.com" --algo bm -j DROP
+iptables -I OUTPUT -m string --string "bdstatic.cn" --algo bm -j DROP
 iptables -I OUTPUT -m string --string "baidu-img.cn" --algo bm -j DROP
 iptables -I OUTPUT -m string --string "hao123.com" --algo bm -j DROP
 iptables -I OUTPUT -m string --string "skycn.net" --algo bm -j DROP
 iptables -I OUTPUT -m string --string "skycn.com" --algo bm -j DROP
 iptables -I OUTPUT -m string --string "shifen.com" --algo bm -j DROP
 iptables -I OUTPUT -m string --string "dwz.cn" --algo bm -j DROP
-iptables -I OUTPUT -m string --string "bdstatic.com" --algo bm -j DROP
-iptables -I OUTPUT -m string --string "bdstatic.cn" --algo bm -j DROP
+
 iptables -I OUTPUT -m string --string "qianqian.com" --algo bm -j DROP
 
 #屏蔽 高德
