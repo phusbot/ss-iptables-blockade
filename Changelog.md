@@ -30,7 +30,7 @@ iptables -I OUTPUT -m string --string "qcloud.com" --algo bm -j DROP
 
 iptables -I OUTPUT -m string --string "qplus.com" --algo bm -j DROP
 
-- `新增` 阿里巴巴
+- `新增` 阿里巴巴规则
 
 iptables -I OUTPUT -m string --string "aliyun.com" --algo bm -j DROP
 
@@ -44,9 +44,9 @@ iptables -I OUTPUT -m string --string "1688.com" --algo bm -j DROP
 
 iptables -I OUTPUT -m string --string "yunos.com" --algo bm -j DROP
 
-- `新增` 携程规则
+- `创建` 携程规则
 
-- `新增` 映客规则
+- `创建` 映客规则
 
 ## 2017年4月22日
 
