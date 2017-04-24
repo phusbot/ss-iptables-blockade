@@ -4,8 +4,6 @@
 
 iptables -I OUTPUT -m string --string "tieba.com" --algo bm -j DROP
 
-iptables -I OUTPUT -m string --string "bdstatic.com" --algo bm -j DROP
-
 iptables -I OUTPUT -m string --string "bdstatic.cn" --algo bm -j DROP
 
 iptables -I OUTPUT -m string --string "duapp.com" --algo bm -j DROP
