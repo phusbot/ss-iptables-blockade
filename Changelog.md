@@ -1,3 +1,13 @@
+## 2017年4月26日
+
+- `新增` China.txt新增腾讯规则
+
+iptables -I OUTPUT -m string --string "qpic.cn" --algo bm -j DROP
+
+iptables -I OUTPUT -m string --string "gtimg.cn" --algo bm -j DROP
+
+iptables -I OUTPUT -m string --string "url.cn" --algo bm -j DROP
+
 ## 2017年4月24日
 
 - `新增` China.txt新增百度、千千静听、糯米规则
