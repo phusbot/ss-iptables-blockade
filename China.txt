@@ -36,6 +36,9 @@ iptables -I OUTPUT -m string --string "myapp.com" --algo bm -j DROP
 iptables -I OUTPUT -m string --string "wegame.com" --algo bm -j DROP
 iptables -I OUTPUT -m string --string "qcloud.com" --algo bm -j DROP
 iptables -I OUTPUT -m string --string "qplus.com" --algo bm -j DROP
+iptables -I OUTPUT -m string --string "qpic.cn" --algo bm -j DROP
+iptables -I OUTPUT -m string --string "gtimg.cn" --algo bm -j DROP
+iptables -I OUTPUT -m string --string "url.cn" --algo bm -j DROP
 
 #屏蔽 IP查询
 iptables -I OUTPUT -m string --string "ipip.net" --algo bm -j DROP
