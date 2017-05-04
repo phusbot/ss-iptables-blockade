@@ -230,3 +230,16 @@ iptables -I OUTPUT -m string --string "meelive.tv" --algo bm -j DROP
 #屏蔽 携程
 iptables -I OUTPUT -m string --string "ctrip.com" --algo bm -j DROP
 iptables -I OUTPUT -m string --string "c-ctrip.com" --algo bm -j DROP
+
+#屏蔽 堆糖
+iptables -I OUTPUT -m string --string "duitang.com" --algo bm -j DROP
+iptables -I OUTPUT -m string --string "dtstatic.com" --algo bm -j DROP
+
+#屏蔽 蘑菇街
+iptables -I OUTPUT -m string --string "mogujie.com" --algo bm -j DROP
+iptables -I OUTPUT -m string --string "mogucdn.com" --algo bm -j DROP
+
+#屏蔽 美丽说
+iptables -I OUTPUT -m string --string "meilishuo.com" --algo bm -j DROP
+iptables -I OUTPUT -m string --string "meilishuo.net" --algo bm -j DROP
+iptables -I OUTPUT -m string --string "juangua.com" --algo bm -j DROP
