@@ -1,0 +1,9 @@
+#屏蔽 疑似蜜罐
+iptables -I OUTPUT -m string --string "rixcloud.com" --algo bm -j DROP
+iptables -I OUTPUT -m string --string "seryovpn.com" --algo bm -j DROP
+iptables -I OUTPUT -m string --string "seryo.moe" --algo bm -j DROP
+iptables -I OUTPUT -m string --string "seryox.com" --algo bm -j DROP
+iptables -I OUTPUT -m string --string "llout.com" --algo bm -j DROP
+
+#屏蔽 疑似蜜罐
+iptables -I OUTPUT -m string --string "rallets.com" --algo bm -j DROP
