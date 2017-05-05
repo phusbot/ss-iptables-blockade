@@ -1,3 +1,9 @@
+## 2017年5月5日
+
+- `新增` Stop.txt新增疑似蜜罐规则
+
+iptables -I OUTPUT -m string --string "rixcloud.io" --algo bm -j DROP
+
 ## 2017年5月4日
 
 - `创建` China.txt创建堆糖、蘑菇街、美丽说规则
