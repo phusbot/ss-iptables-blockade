@@ -1,8 +1,12 @@
 ## 2017年5月5日
 
-- `新增` Stop.txt新增疑似蜜罐规则
+- `修改` Stop.txt修改疑似蜜罐规则
 
-iptables -I OUTPUT -m string --string "rixcloud.io" --algo bm -j DROP
+iptables -I OUTPUT -m string --string "rixcloud.com" --algo bm -j DROP
+
+修改为
+
+iptables -I OUTPUT -m string --string "rixcloud" --algo bm -j DROP
 
 ## 2017年5月4日
 
