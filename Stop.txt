@@ -1,6 +1,5 @@
 #屏蔽 疑似蜜罐
-iptables -I OUTPUT -m string --string "rixcloud.com" --algo bm -j DROP
-iptables -I OUTPUT -m string --string "rixcloud.io" --algo bm -j DROP
+iptables -I OUTPUT -m string --string "rixcloud" --algo bm -j DROP
 iptables -I OUTPUT -m string --string "seryovpn.com" --algo bm -j DROP
 iptables -I OUTPUT -m string --string "seryo.moe" --algo bm -j DROP
 iptables -I OUTPUT -m string --string "seryox.com" --algo bm -j DROP
