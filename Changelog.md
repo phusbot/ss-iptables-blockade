@@ -1,3 +1,9 @@
+## 2017年8月25日
+
+- `创建` China.txt创建政府规则
+
+iptables -I OUTPUT -m string --string "gov.cn" --algo bm -j DROP
+
 ## 2017年5月5日
 
 - `修改` Stop.txt修改疑似蜜罐规则
