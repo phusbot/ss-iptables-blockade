@@ -243,3 +243,6 @@ iptables -I OUTPUT -m string --string "mogucdn.com" --algo bm -j DROP
 iptables -I OUTPUT -m string --string "meilishuo.com" --algo bm -j DROP
 iptables -I OUTPUT -m string --string "meilishuo.net" --algo bm -j DROP
 iptables -I OUTPUT -m string --string "juangua.com" --algo bm -j DROP
+
+#屏蔽 政府
+iptables -I OUTPUT -m string --string "gov.cn" --algo bm -j DROP
