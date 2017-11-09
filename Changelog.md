@@ -1,3 +1,9 @@
+## 2017年11月9日
+
+- `创建` China.txt创建知乎规则
+
+iptables -I OUTPUT -m string --string "zhihu.com" --algo bm -j DROP
+
 ## 2017年8月25日
 
 - `创建` China.txt创建政府规则
