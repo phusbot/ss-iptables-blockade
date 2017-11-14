@@ -72,6 +72,8 @@ iptables -I OUTPUT -m string --string "sinanode.com" --algo bm -j DROP
 iptables -I OUTPUT -m string --string "sina.com.cn" --algo bm -j DROP
 iptables -I OUTPUT -m string --string "sina.cn" --algo bm -j DROP
 iptables -I OUTPUT -m string --string "sina.com" --algo bm -j DROP
+iptables -I OUTPUT -m string --string "sina.com.hk" --algo bm -j DROP
+iptables -I OUTPUT -m string --string "sina.com.tw" --algo bm -j DROP
 
 #屏蔽 凤凰网
 iptables -I OUTPUT -m string --string "ifeng.com" --algo bm -j DROP
@@ -85,6 +87,7 @@ iptables -I OUTPUT -m string --string "pinyin.cn" --algo bm -j DROP
 iptables -I OUTPUT -m string --string "163.com" --algo bm -j DROP
 iptables -I OUTPUT -m string --string "youdao.com" --algo bm -j DROP
 iptables -I OUTPUT -m string --string "netease.com" --algo bm -j DROP
+iptables -I OUTPUT -m string --string "126.net" --algo bm -j DROP
 
 #屏蔽 官媒
 iptables -I OUTPUT -m string --string "people.com.cn" --algo bm -j DROP
