@@ -1,3 +1,14 @@
+## 2017年11月14日
+
+- `新增` China.txt新增网易规则
+
+iptables -I OUTPUT -m string --string "126.net" --algo bm -j DROP
+
+- `新增` 新浪&微博规则
+
+iptables -I OUTPUT -m string --string "sina.com.hk" --algo bm -j DROP
+iptables -I OUTPUT -m string --string "sina.com.tw" --algo bm -j DROP
+
 ## 2017年11月9日
 
 - `创建` China.txt创建知乎规则
