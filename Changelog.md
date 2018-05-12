@@ -1,3 +1,13 @@
+## 2018年5月12日
+
+- `新增` China.txt新增小米规则
+
+iptables -I OUTPUT -m string --string "miui.com" --algo bm -j DROP
+
+- `新增` 360规则
+
+iptables -I OUTPUT -m string --string "360kan.com" --algo bm -j DROP
+
 ## 2017年11月14日
 
 - `新增` China.txt新增网易规则
