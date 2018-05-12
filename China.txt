@@ -52,6 +52,7 @@ iptables -I OUTPUT -m string --string "360.com" --algo bm -j DROP
 iptables -I OUTPUT -m string --string "360safe.com" --algo bm -j DROP
 iptables -I OUTPUT -m string --string "360totalsecurity.com" --algo bm -j DROP
 iptables -I OUTPUT -m string --string "so.com" --algo bm -j DROP
+iptables -I OUTPUT -m string --string "360kan.com" --algo bm -j DROP
 
 #屏蔽 广告&统计
 iptables -I OUTPUT -m string --string "mediav.com" --algo bm -j DROP
@@ -133,6 +134,7 @@ iptables -I OUTPUT -m string --string "mi.com" --algo bm -j DROP
 iptables -I OUTPUT -m string --string "mi.cn" --algo bm -j DROP
 iptables -I OUTPUT -m string --string "xiaomi.com" --algo bm -j DROP
 iptables -I OUTPUT -m string --string "xiaomi.cn" --algo bm -j DROP
+iptables -I OUTPUT -m string --string "miui.com" --algo bm -j DROP
 
 #屏蔽 华为
 iptables -I OUTPUT -m string --string "huawei.com" --algo bm -j DROP
