@@ -148,6 +148,7 @@ iptables -I OUTPUT -m string --string "mi.cn" --algo bm -j DROP
 iptables -I OUTPUT -m string --string "xiaomi.com" --algo bm -j DROP
 iptables -I OUTPUT -m string --string "xiaomi.cn" --algo bm -j DROP
 iptables -I OUTPUT -m string --string "miui.com" --algo bm -j DROP
+iptables -I OUTPUT -m string --string "miui.cn" --algo bm -j DROP
 
 #屏蔽 华为
 iptables -I OUTPUT -m string --string "huawei.com" --algo bm -j DROP
@@ -224,6 +225,9 @@ iptables -I OUTPUT -m string --string "miaopai.com" --algo bm -j DROP
 
 #屏蔽 2345
 iptables -I OUTPUT -m string --string "2345.com" --algo bm -j DROP
+iptables -I OUTPUT -m string --string "2345.cn" --algo bm -j DROP
+iptables -I OUTPUT -m string --string "duote.com" --algo bm -j DROP
+iptables -I OUTPUT -m string --string "2345download.com" --algo bm -j DROP
 
 #屏蔽 美团
 iptables -I OUTPUT -m string --string "meituan.net" --algo bm -j DROP
