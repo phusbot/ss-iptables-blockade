@@ -40,6 +40,18 @@ iptables -I OUTPUT -m string --string "dingtalk.com" --algo bm -j DROP
 
 iptables -I OUTPUT -m string --string "mybank.cn" --algo bm -j D
 
+- `新增` 小米规则
+
+iptables -I OUTPUT -m string --string "miui.cn" --algo bm -j DROP
+
+- `新增` 2345规则
+
+iptables -I OUTPUT -m string --string "2345.cn" --algo bm -j DROP
+
+iptables -I OUTPUT -m string --string "duote.com" --algo bm -j DROP
+
+iptables -I OUTPUT -m string --string "2345download.com" --algo bm -j DROP
+
 ## 2018年5月12日
 
 - `新增` China.txt新增小米规则
