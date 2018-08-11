@@ -1,3 +1,45 @@
+## 2018年8月11日
+
+- `创建` China.txt创建抖音、开发SDK、小蚁规则
+
+- `修改` China.txt修改站长统计规则
+
+iptables -I OUTPUT -m string --string "umeng.com" --algo bm -j DROP
+
+修改为
+
+iptables -I OUTPUT -m string --string "umeng" --algo bm -j DROP
+
+- `新增` China.txt新增IP查询规则
+
+iptables -I OUTPUT -m string --string "ip-api.com" --algo bm -j DROP
+
+- `新增` 广告&统计规则
+
+iptables -I OUTPUT -m string --string "flurry.com" --algo bm -j DROP
+
+- `新增` 搜狐规则
+
+iptables -I OUTPUT -m string --string "sogoucdn.com" --algo bm -j DROP
+
+- `新增` 网易规则
+
+iptables -I OUTPUT -m string --string "netease.im" --algo bm -j DROP
+
+iptables -I OUTPUT -m string --string "qiyukf.com" --algo bm -j DROP
+
+iptables -I OUTPUT -m string --string "yixin.im" --algo bm -j DROP
+
+- `新增` 阿里巴巴规则
+
+iptables -I OUTPUT -m string --string "alipayobjects.com" --algo bm -j DROP
+
+iptables -I OUTPUT -m string --string "aliyuncs.com" --algo bm -j DROP
+
+iptables -I OUTPUT -m string --string "dingtalk.com" --algo bm -j DROP
+
+iptables -I OUTPUT -m string --string "mybank.cn" --algo bm -j D
+
 ## 2018年5月12日
 
 - `新增` China.txt新增小米规则
