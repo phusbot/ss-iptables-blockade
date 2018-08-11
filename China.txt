@@ -45,6 +45,10 @@ iptables -I OUTPUT -m string --string "ipip.net" --algo bm -j DROP
 iptables -I OUTPUT -m string --string "ip138.com" --algo bm -j DROP
 iptables -I OUTPUT -m string --string "cz88.net" --algo bm -j DROP
 iptables -I OUTPUT -m string --string "ip.cn" --algo bm -j DROP
+iptables -I OUTPUT -m string --string "ip-api.com" --algo bm -j DROP
+iptables -A OUTPUT -d 209.58.164.148 -j REJECT
+iptables -A OUTPUT -d 72.11.140.50 -j REJECT
+iptables -A OUTPUT -d 66.212.29.250 -j REJECT
 
 #屏蔽 360
 iptables -I OUTPUT -m string --string "360.cn" --algo bm -j DROP
@@ -56,11 +60,12 @@ iptables -I OUTPUT -m string --string "360kan.com" --algo bm -j DROP
 
 #屏蔽 广告&统计
 iptables -I OUTPUT -m string --string "mediav.com" --algo bm -j DROP
+iptables -I OUTPUT -m string --string "flurry.com" --algo bm -j DROP
 
 #屏蔽 站长统计
 iptables -I OUTPUT -m string --string "51.la" --algo bm -j DROP
 iptables -I OUTPUT -m string --string "cnzz.cn" --algo bm -j DROP
-iptables -I OUTPUT -m string --string "umeng.com" --algo bm -j DROP
+iptables -I OUTPUT -m string --string "umeng" --algo bm -j DROP
 iptables -I OUTPUT -m string --string "51yes.com" --algo bm -j DROP
 
 #屏蔽 新浪&微博
@@ -83,12 +88,16 @@ iptables -I OUTPUT -m string --string "ifeng.com" --algo bm -j DROP
 iptables -I OUTPUT -m string --string "sohu.com" --algo bm -j DROP
 iptables -I OUTPUT -m string --string "sogou.com" --algo bm -j DROP
 iptables -I OUTPUT -m string --string "pinyin.cn" --algo bm -j DROP
+iptables -I OUTPUT -m string --string "sogoucdn.com" --algo bm -j DROP
 
 #屏蔽 网易
 iptables -I OUTPUT -m string --string "163.com" --algo bm -j DROP
 iptables -I OUTPUT -m string --string "youdao.com" --algo bm -j DROP
 iptables -I OUTPUT -m string --string "netease.com" --algo bm -j DROP
 iptables -I OUTPUT -m string --string "126.net" --algo bm -j DROP
+iptables -I OUTPUT -m string --string "netease.im" --algo bm -j DROP
+iptables -I OUTPUT -m string --string "qiyukf.com" --algo bm -j DROP
+iptables -I OUTPUT -m string --string "yixin.im" --algo bm -j DROP
 
 #屏蔽 官媒
 iptables -I OUTPUT -m string --string "people.com.cn" --algo bm -j DROP
@@ -102,6 +111,7 @@ iptables -I OUTPUT -m string --string "taobao.com" --algo bm -j DROP
 iptables -I OUTPUT -m string --string "tmall.com" --algo bm -j DROP
 iptables -I OUTPUT -m string --string "alipay.com" --algo bm -j DROP
 iptables -I OUTPUT -m string --string "alipaylog.com" --algo bm -j DROP
+iptables -I OUTPUT -m string --string "alipayobjects.com" --algo bm -j DROP
 iptables -I OUTPUT -m string --string "alicdn.com" --algo bm -j DROP
 iptables -I OUTPUT -m string --string "alimama.com" --algo bm -j DROP
 iptables -I OUTPUT -m string --string "alibaba.com" --algo bm -j DROP
@@ -115,6 +125,9 @@ iptables -I OUTPUT -m string --string "alitrip.com" --algo bm -j DROP
 iptables -I OUTPUT -m string --string "fliggy.com" --algo bm -j DROP
 iptables -I OUTPUT -m string --string "1688.com" --algo bm -j DROP
 iptables -I OUTPUT -m string --string "yunos.com" --algo bm -j DROP
+iptables -I OUTPUT -m string --string "aliyuncs.com" --algo bm -j DROP
+iptables -I OUTPUT -m string --string "dingtalk.com" --algo bm -j DROP
+iptables -I OUTPUT -m string --string "mybank.cn" --algo bm -j DROP
 
 #屏蔽 京东
 iptables -I OUTPUT -m string --string "jd.com" --algo bm -j DROP
@@ -254,3 +267,18 @@ iptables -I OUTPUT -m string --string "gov.cn" --algo bm -j DROP
 
 #屏蔽 知乎
 iptables -I OUTPUT -m string --string "zhihu.com" --algo bm -j DROP
+
+#屏蔽 抖音
+iptables -I OUTPUT -m string --string "douyin.com" --algo bm -j DROP
+iptables -I OUTPUT -m string --string "tiktok.com" --algo bm -j DROP
+iptables -I OUTPUT -m string --string "toutiao.com" --algo bm -j DROP
+iptables -I OUTPUT -m string --string "snssdk.com" --algo bm -j DROP
+iptables -I OUTPUT -m string --string "pstatp.com" --algo bm -j DROP
+iptables -I OUTPUT -m string --string "ixigua.com" --algo bm -j DROP
+iptables -I OUTPUT -m string --string "amemv.com" --algo bm -j DROP
+
+#屏蔽 开发SDK
+iptables -I OUTPUT -m string --string "mob.com" --algo bm -j DROP
+
+#屏蔽 小蚁
+iptables -I OUTPUT -m string --string "xiaoyi.com" --algo bm -j DROP
